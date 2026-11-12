@@ -4,7 +4,7 @@ import net.minecraft.client.Minecraft;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Module {
+public abstract class BaseModule {
     public final String name, category, description;
     /** Glyph shown in the menu and HUD arraylist; user-editable. */
     public String glyph;
@@ -12,7 +12,7 @@ public abstract class Module {
     public boolean enabled, showInList = true;
     public final List<Setting> settings = new ArrayList<>();
 
-    protected Module(String name, String category, String glyph, String description) {
+  protected BaseModule(String name, String category, String glyph, String description) {
         this.name = name; this.category = category; this.glyph = glyph; this.description = description; }
     protected <T extends Setting> T add(T s) { settings.add(s); return s; }
     public void toggle() { setEnabled(!enabled); }
