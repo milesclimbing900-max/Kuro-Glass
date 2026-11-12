@@ -1,0 +1,4 @@
+{"schemaVersion":1,"id":"kuroglass","version":"${version}","name":"Kuro Glass",
+"description":"Client utility mod with a fully customisable liquid-glass GUI and HUD.",
+"environment":"client","entrypoints":{"client":["dev.kuro.glass.KuroGlass"]},
+"depends":{"fabricloader":">=0.18.1","minecraft":"~1.21.11","java":">=21","fabric-api":"*"}}
